@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <span id="span1" style="position: relative;z-index: 2;">
+    <span id="span11" style="padding: 50px;position: absolute; z-index: 100;">1</span>
+    <span id="span12" style="padding: 50px;position: absolute; z-index: 100;">1</span>
+  </span>
+  <div></div>
+  <span>
+    <span id="span2">2</span>
+  </span>
+  <span style="position: relative;z-index: 4;">
+    <span id="span3" style="position: absolute; z-index: 50;">3</span>
+  </span>
+  <script>
+    document.getElementById('span1').addEventListener('click', () => {
+      console.log(1)
+    })
+    /* document.getElementById('span11').addEventListener('click', () => {
+      console.log(1)
+    }) */
+    document.getElementById('span2').addEventListener('click', () => {
+      console.log(2)
+    })
+    document.getElementById('span3').addEventListener('click', () => {
+      console.log(3)
+    })
+  </script>
+</body>
+</html>
